@@ -78,4 +78,16 @@
 # puts "7 has been found"
 
 
+teacher = "no"
+
+until teacher == "yes"
+  puts "May I have my yellow crayon!"
+  teacher = gets.chomp.downcase
+  if teacher == "no"
+      puts "no, use a different color"
+  end
+end
+puts "Finally!"
+
+
 
