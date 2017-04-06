@@ -1,4 +1,4 @@
-# 1 #Assign a letter grade based on number range
+# # 1 #Assign a letter grade based on number range
 
 # puts "What is the number grade you have?"
 # grade = gets.chomp.to_i
@@ -19,21 +19,24 @@
 # end			 	
 
 
-# 2 #Find if divisible
+# #2. Create a program that takes two numbers from the user and find out if the first is divisible by the second. If not divisible, let user know what the remainder is.
+
+
 # puts "Give me a number"
 # num1 = gets.chomp.to_i
 # puts "Give me another number"
 # num2 = gets.chomp.to_i
 
-# remainder = num1%num2
+# remainder = num1%num2  #used '%' to return remainder for num1 & num2
 
 # if remainder == 0
-# 	puts "#{num1} is divisible by #{num2}."
+# 	puts "#{num1} is evenly divisible by #{num2}."
 # else
 # 	puts "#{num1} is divisible by #{num2} with a remainder of #{remainder}."	
 # end	
 
-# 3 #String to Array
+# # 3. Create a program that takes a name (or any word, really), and spells it out, one letter at a time (horizontally). Then have the name/word spelled out in one line (vertically), but with commas between each letter (but not after the last letter).
+
 
 # puts "What is your name?"
 # name = gets.chomp.split("")
@@ -62,8 +65,8 @@
 # if word[0] =='a' || word[0] =='e' ||word[0] =='i' ||word[0] =='o' ||word[0] =='u'
 # 	puts "Your Pig Latin word  is '#{word}way'"
 # else
-# 	length = word.length - 1
-# 	pl_word = word[1..length]
+# 	last_letter = word.length - 1
+# 	pl_word = word[1..last_letter]
 # 	puts "Your Pig Latin word is '#{pl_word}#{word[0]}ay'"
 # end	
 
@@ -78,11 +81,11 @@
 # 	puts prime
 # end	
 
-# 6. Write a Rock, Paper, Scissors game where a user can play against the computer.
+# # 6. Write a Rock, Paper, Scissors game where a user can play against the computer.
 
-# The user should enter rock, paper, or scissors (remember to account for differences in capitalization!), and the computer will choose a random value.
-# After each turn display the score (user wins vs. computer wins).
-# Whichever player reaches five wins first is the winner!
+# # The user should enter rock, paper, or scissors (remember to account for differences in capitalization!), and the computer will choose a random value.
+# # After each turn display the score (user wins vs. computer wins).
+# # Whichever player reaches five wins first is the winner!
 
 # puts "Choose rock, paper, scissors"
 # choice = gets.chomp.downcase
@@ -99,7 +102,7 @@
 # 		elsif choice == "paper"
 # 			puts "Computer chose rock!  You win!"	
 # 		else 
-# 			puts "Compter chose rock!  You lose."	
+# 			puts "Computer chose rock!  You lose."	
 # 		end	
 # elsif computer >=34 && computer <66
 # 	if choice == "rock"
@@ -117,10 +120,12 @@
 # 			else 
 # 				puts "Compter chose scissors!  It's a tie!"	
 # 			end		
-# end				
+# end	
+
+
 # 7.  Fizzbuzz: Write a program that prints the numbers from 1 to 100. But for multiples of three (3) print "Fizz" instead of the number, and for the multiples of five (5) print "Buzz". For multiples of both three (3) and five (5), print "FizzBuzz".
 
-# count = 0
+# count = 1
 
 # until count == 100
 # 	if count%3 == 0
@@ -142,23 +147,23 @@
 # # Find the average of those test scores and print it out.
 
 
-# scores = [80, 20, 100, 100, 75, 90, 89, 92]
-# scores.sort!
+scores = [80, 20, 100, 100, 75, 90, 89, 92]
+scores.sort!
 
-# scores.each do |s|
-# 	puts s
-# end
+scores.each do |s|
+	puts s
+end
 
-# length = scores.length
+length = scores.length
 
-# sum = 0
-# scores.each do |s|
-# 	sum +=s
-# end
+sum = 0
+scores.each do |s|
+	sum +=s
+end
 
-# avg = sum/length
+avg = sum/length
 
-# puts "The average test score is #{avg}"	
+puts "The average test score is #{avg}"	
 
 
 
